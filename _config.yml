@@ -17,7 +17,7 @@ root: /blog
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
-# Directory
+# Directory public_dir: /home/better/tmp/weihuagu.github.io/blog
 source_dir: source
 public_dir: /home/better/tmp/weihuagu.github.io/blog
 tag_dir: tags
@@ -71,3 +71,15 @@ deploy:
   type:  git
   repository: https://github.com/WeihuaGu/weihuagu.github.io.git
   branch: master
+
+
+
+# Extensions
+Plugins: 
+- hexo-generator-sitemap
+
+# 自动生成sitemap
+sitemap:
+  path: sitemap.xml
+baidusitemap:
+  path: baidusitemap.xml
